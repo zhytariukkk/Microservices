@@ -22,7 +22,7 @@ public class DeviceService {
         return deviceRepository.findById(id).orElseThrow();
     }
 
-    public Device createDevice(Device device) {
+    public static Device createDevice(Device device) {
         return deviceRepository.save(device);
     }
 
